@@ -38,22 +38,22 @@ const Navbar = () => {
 
       <List flexDirection={{base:"column", sm:"column", md:"column",lg:"row", xl:"row"}} h={{base:navbarToggle ? "500px" : "", sm:navbarToggle ? "500px" : "", md:navbarToggle ? "500px" : ""}} pos={{base:"absolute", sm:"absolute", md:"absolute", lg:"static", xl:"static"}} display={{base: navbarToggle ? "flex" : "none", sm:navbarToggle ? "flex" : "none", md:navbarToggle ? "flex" : "none",lg:"flex", xl:"flex"}} top={{base:"50px", sm:"50px", md:"50px", lg:"50%", xl:"50%"}} left={{base:"0px", sm:"0px", md:"0px"}} right={{base:"0px", sm:"0px", md:"0px"}} alignItems="center" columnGap="15px" zIndex={{base:"99", sm:"99", md:"99"}} bg={{base:"white", sm:"white", md:"white"}}>
         <ListItem sx={linkStyles}>
-          <NavLink to="business">Business</NavLink>
+          <NavLink to="business" onClick={renderToggle}>Business</NavLink>
         </ListItem>
         <ListItem sx={linkStyles}>
-          <NavLink to="entertainment">Entertainment</NavLink>
+          <NavLink to="entertainment" onClick={renderToggle}>Entertainment</NavLink>
         </ListItem>
         <ListItem sx={linkStyles}>
-          <NavLink to="health">Health</NavLink>
+          <NavLink to="health" onClick={renderToggle}>Health</NavLink>
         </ListItem>
         <ListItem sx={linkStyles}>
-          <NavLink to="science">Science</NavLink>
+          <NavLink to="science" onClick={renderToggle}>Science</NavLink>
         </ListItem>
         <ListItem sx={linkStyles}>
-          <NavLink to="sports">Sports</NavLink>
+          <NavLink to="sports" onClick={renderToggle}>Sports</NavLink>
         </ListItem>
         <ListItem sx={linkStyles}>
-          <NavLink to="technology">Technology</NavLink>
+          <NavLink to="technology" onClick={renderToggle}>Technology</NavLink>
         </ListItem>
       </List>
 
