@@ -6,9 +6,9 @@ const Article = ({item}) => {
 <Flex  flexDirection="column">
 
 <Img h={{base:"300px", sm:"300px", md:"300px", lg:"400px", xl:"400px"}} w="100%" src={item.image_url} backgroundRepeat="no-repeat"/>
-       <Text>{ item.title }</Text>
-       <Text>{item.source_id}</Text>
-       <Link href={item.link}>Read More...</Link>
+       <Text mb="5px" fontWeight="600">{ item.title }</Text>
+       <Text mb="15px">{item.source_id}</Text>
+       <Link href={item.link} color="grey">Read More...</Link>
        {/* <Text>{item.description}</Text> */}
     </Flex>
     </Box>
