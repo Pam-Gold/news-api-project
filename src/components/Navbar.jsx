@@ -36,7 +36,7 @@ const Navbar = () => {
       </Box>
 
 
-      <List flexDirection={{base:"column", sm:"column", md:"column"}} h={{base:navbarToggle ? "500px" : "", sm:navbarToggle ? "500px" : "", md:navbarToggle ? "500px" : ""}} pos={{base:"absolute", sm:"absolute", md:"absolute", lg:"static", xl:"static"}} display={{base: navbarToggle ? "flex" : "none", sm:navbarToggle ? "flex" : "none", md:navbarToggle ? "flex" : "none",lg:"flex", xl:"flex"}} top={{base:"50px", sm:"50px", md:"50px", lg:"0px", xl:"0px"}} left={{base:"0px", sm:"0px", md:"0px"}} right={{base:"0px", sm:"0px", md:"0px"}} alignItems="center" columnGap="15px" zIndex={{base:"99", sm:"99", md:"99"}} bg={{base:"white", sm:"white", md:"white"}}>
+      <List flexDirection={{base:"column", sm:"column", md:"column",lg:"row", xl:"row"}} h={{base:navbarToggle ? "500px" : "", sm:navbarToggle ? "500px" : "", md:navbarToggle ? "500px" : ""}} pos={{base:"absolute", sm:"absolute", md:"absolute", lg:"static", xl:"static"}} display={{base: navbarToggle ? "flex" : "none", sm:navbarToggle ? "flex" : "none", md:navbarToggle ? "flex" : "none",lg:"flex", xl:"flex"}} top={{base:"50px", sm:"50px", md:"50px", lg:"50%", xl:"50%"}} left={{base:"0px", sm:"0px", md:"0px"}} right={{base:"0px", sm:"0px", md:"0px"}} alignItems="center" columnGap="15px" zIndex={{base:"99", sm:"99", md:"99"}} bg={{base:"white", sm:"white", md:"white"}}>
         <ListItem sx={linkStyles}>
           <NavLink to="business">Business</NavLink>
         </ListItem>
