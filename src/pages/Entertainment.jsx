@@ -9,7 +9,7 @@ import useStore from "../Store";
 const Entertainment = () => {
   const { data, fetchData } = useStore();
   useEffect(() => {
-    fetchData("https://newsapi.org/v2/everything?q=entertainment&apiKey=05a168e910a246c493f80df4a4f7601d");
+    fetchData("https://newsapi.org/v2/everything?q=entertainment&pageSize=25&apiKey=05a168e910a246c493f80df4a4f7601d");
   }, []);
 
   console.log(data);

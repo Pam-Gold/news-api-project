@@ -8,7 +8,7 @@ import useStore from "../Store";
 const Business = () => {
   const { data, fetchData } = useStore();
   useEffect(() => {
-    fetchData("https://newsapi.org/v2/everything?q=business&apiKey=05a168e910a246c493f80df4a4f7601d");
+    fetchData("https://newsapi.org/v2/everything?q=business&pageSize=25&apiKey=05a168e910a246c493f80df4a4f7601d");
   }, []);
 
   console.log(data);

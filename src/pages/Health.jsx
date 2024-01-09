@@ -9,7 +9,7 @@ import useStore from "../Store";
 const Health = () => {
   const { data, fetchData } = useStore();
   useEffect(() => {
-    fetchData("https://newsapi.org/v2/everything?q=health&apiKey=05a168e910a246c493f80df4a4f7601d");
+    fetchData("https://newsapi.org/v2/everything?q=health&pageSize=25&apiKey=05a168e910a246c493f80df4a4f7601d");
   }, []);
 
   console.log(data);

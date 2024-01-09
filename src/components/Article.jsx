@@ -5,10 +5,10 @@ const Article = ({item}) => {
     <Box p="10px">
 <Flex  flexDirection="column">
 
-<Img h={{base:"300px", sm:"300px", md:"300px", lg:"400px", xl:"400px"}} w="100%" src={item.image_url} backgroundRepeat="no-repeat"/>
+<Img h={{base:"300px", sm:"300px", md:"300px", lg:"400px", xl:"400px"}} w="100%" src={item.urlToImage} backgroundRepeat="no-repeat"/>
        <Text mb="5px" fontWeight="600">{ item.title }</Text>
-       <Text mb="15px">{item.source_id}</Text>
-       <Link href={item.link} color="grey">Read More...</Link>
+       <Text mb="15px">{item.author}</Text>
+       <Link href={item.url} color="grey">Read More...</Link>
        {/* <Text>{item.description}</Text> */}
     </Flex>
     </Box>
