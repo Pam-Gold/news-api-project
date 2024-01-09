@@ -15,7 +15,7 @@ const Home = () => {
   console.log(data);
 
   return (
-    <Grid className="news-grid" gridTemplateColumns={{base:"1fr", sm:"1fr", md:"1fr 1fr", lg:"1fr 1fr 1fr", xl:"1fr 1fr 1fr" }} gridTemplateRows={{base:"400px", sm:"400px", md:"400px", lg:"500px", xl:"500px"}} gap="25px">
+    <Grid className="news-grid" gridTemplateColumns={{base:"1fr", sm:"1fr", md:"1fr 1fr", lg:"1fr 1fr 1fr", xl:"1fr 1fr 1fr" }} gridTemplateRows={{base:"400px", sm:"450px", md:"450px", lg:"500px", xl:"500px"}} gap="25px">
       {data.map((item) => (
         <Article item={item} />
       ))}

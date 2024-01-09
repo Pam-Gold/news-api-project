@@ -38,7 +38,7 @@ inputRef.current.value = "";
 <Input ref={inputRef} fontSize="1.25rem" border="none"borderRadius="0px" outline="none" borderBottom="2px solid grey" placeholder="Search News..." />
 <Button onClick={handleSearch}><i className="fa-solid fa-arrow-right"></i></Button>
 </Flex>
-<Grid className="news-grid" gridTemplateColumns={{base:"1fr", sm:"1fr", md:"1fr 1fr", lg:"1fr 1fr 1fr", xl:"1fr 1fr 1fr" }} gridTemplateRows={{base:"350px", sm:"400px", md:"350px", lg:"500px", xl:"500px"}} gap="25px">
+<Grid className="news-grid" gridTemplateColumns={{base:"1fr", sm:"1fr", md:"1fr 1fr", lg:"1fr 1fr 1fr", xl:"1fr 1fr 1fr" }} gridTemplateRows={{base:"450px", sm:"450px", md:"450px", lg:"500px", xl:"500px"}} gap="25px">
       {data.map((item) => (
         <Article item={item} />
       ))}
