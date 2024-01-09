@@ -9,7 +9,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    fetchData("https://newsdata.io/api/1/news?apikey=pub_36099d663cea1cc3aa5d4b66cd157be2c5361&q=top");
+    fetchData("https://newsapi.org/v2/top-headlines?country=us&apiKey=05a168e910a246c493f80df4a4f7601d");
   }, []);
 
   console.log(data);

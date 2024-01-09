@@ -18,7 +18,7 @@ const handleSearch = () => {
     alert("Type in Feed...")
   }
   else{
-    fetchData(`https://newsdata.io/api/1/news?apikey=pub_36099d663cea1cc3aa5d4b66cd157be2c5361&q=${inputRef.current.value}`);
+    fetchData(`https://newsapi.org/v2/everything?q=${inputRef.current.value}&apiKey=05a168e910a246c493f80df4a4f7601d`);
   
   }
 inputRef.current.value = "";
