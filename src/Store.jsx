@@ -4,7 +4,7 @@ import axios from "axios";
 
 const store = (set) => ({
   data: [],
-  fetchData: (url)=> axios.get(url).then(res=>set(({data: res.data.articles}))).catch(err=>console.log(err))
+  fetchData: (url)=> axios.get(url).then(res=>set(({data: res.articles}))).catch(err=>console.log(err))
 });
 
 const useStore = create(store);
