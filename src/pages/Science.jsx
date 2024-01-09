@@ -9,7 +9,7 @@ import useStore from "../Store";
 const Science = () => {
   const { data, fetchData } = useStore();
   useEffect(() => {
-    fetchData("https://newsapi.org/v2/everything?q=science&pageSize=25&apiKey=05a168e910a246c493f80df4a4f7601d");
+    fetchData("https://gnews.io/api/v4/search?q=science&lang=en&country=us&max=10&apikey=746e3c2efb7d4c4135084106cfd5b928");
   }, []);
 
   console.log(data);
