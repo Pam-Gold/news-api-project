@@ -28,11 +28,12 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="business" element={<Business />} />
       <Route path="entertainment" element={<Entertainment />} />
-      <Route path="search" element={<Search />} />
       <Route path="health" element={<Health />} />
       <Route path="science" element={<Science />} />
       <Route path="sports" element={<Sports />} />
       <Route path="technology" element={<Technology />} />
+      <Route path="search" element={<Search />} />
+
     </Route>
   )
 );
