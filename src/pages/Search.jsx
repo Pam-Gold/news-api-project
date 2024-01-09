@@ -14,9 +14,16 @@ const inputRef = useRef()
 
 const handleSearch = () => {
 
+  if(inputRef.current.value === ""){
+    alert("Type in Feed...")
+  }
+  else{
     fetchData(`https://newsdata.io/api/1/news?apikey=pub_36099d663cea1cc3aa5d4b66cd157be2c5361&q=${inputRef.current.value}`);
   
-    console.log(inputRef.current.value)
+  }
+inputRef.current.value = "";
+   
+    // console.log(inputRef.current.value)
 
 }
 
