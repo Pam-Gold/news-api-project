@@ -130,7 +130,7 @@ const Navbar = () => {
           <Box sx={hamburgerStyles}></Box>
         </Flex>
 
-        <Button onClick={renderToggle}>
+        <Button >
           <Link to="search">
             <i
               className="fa-solid fa-search"
