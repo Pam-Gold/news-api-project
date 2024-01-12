@@ -11,11 +11,35 @@ import useToggle from "../hooks/useToggle";
 const Navbar = () => {
   const [navbarToggle, renderToggle] = useToggle();
 
-  const hamburgerStyles = {
+  const hamburgerStyles1 = {
     h: "5px",
     w: "100%",
     bg: "black",
     borderRadius: "10px",
+    transform:!navbarToggle? "rotate(0deg) translate(0, 0)" :"rotate(-45deg) translate(-4px, 7px)" ,
+    transition:"0.4s ease"
+  
+  };
+
+  const hamburgerStyles2 = {
+    h: "5px",
+    w: "100%",
+    bg: "black",
+    borderRadius: "10px",
+    opacity: !navbarToggle? 1 : 0,
+    transition:"0.4s ease"
+  
+  };
+
+  const hamburgerStyles3 = {
+    h: "5px",
+    w: "100%",
+    bg: "black",
+    borderRadius: "10px",
+    transform:!navbarToggle? "rotate(0deg) translate(0, 0)" :"rotate(45deg) translate(-7px, -10.5px)" ,
+    transition:"0.4s ease"
+  
+  
   };
 
   const linkStyles = {
@@ -25,10 +49,14 @@ const Navbar = () => {
       md: "1.6rem",
       lg: "1.4rem",
       xl: "1.4rem",
+      
     },
     fontWeight: "bold",
     mb: { base: "30px", sm: "30px", md: "30px", lg:"0px", xl:"0px" },
   };
+
+
+
 
   return (
     <Flex h="50px" w="100%" justify="space-between" align="center" p="0px 10px">
@@ -124,10 +152,11 @@ const Navbar = () => {
             lg: "none",
             xl: '"none',
           }}
+      
         >
-          <Box sx={hamburgerStyles}></Box>
-          <Box sx={hamburgerStyles}></Box>
-          <Box sx={hamburgerStyles}></Box>
+          <Box sx={hamburgerStyles1}></Box>
+          <Box sx={hamburgerStyles2}></Box>
+          <Box sx={hamburgerStyles3}></Box>
         </Flex>
 
         <Button >
